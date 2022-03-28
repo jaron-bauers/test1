@@ -35,6 +35,7 @@ def set_properties(project):
     project.set_property('flake8_verbose_output', True)
     project.set_property('flake8_break_build', True)
     project.set_property('flake8_ignore', 'E501, W503, F401, F841')
+    project.depends_on_requirements('requirements.txt')
     project.set_property('distutils_readme_description', True)
     project.set_property('distutils_description_overwrite', True)
     project.set_property('distutils_upload_skip_existing', True)
